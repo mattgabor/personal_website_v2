@@ -96,7 +96,10 @@ export default withFormik({
       message: Yup.string().required('Message field is required'),
       recaptcha: Yup.string().required('Robots are not welcome yet!'),
     }),
-  handleSubmit: async ({ name, email, message, recaptcha }, { setSubmitting, resetForm, setFieldValue }) => {
+  handleSubmit: async (
+    { name, email, message, recaptcha },
+    { setSubmitting, resetForm, setFieldValue },
+  ) => {
     try {
       const encode = data =>
         Object.keys(data)
@@ -119,7 +122,7 @@ export default withFormik({
     } catch (err) {
       setSubmitting(false);
       setFieldValue('success', false);
-			alert('Something went wrong, please try again!') // eslint-disable-line
+      alert('Something went wrong, please try again!'); // eslint-disable-line
     }
   },
 })(ContactForm);
