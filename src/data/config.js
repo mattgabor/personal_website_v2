@@ -10,7 +10,7 @@ module.exports = {
     github: 'https://github.com/mattgabor',
     linkedin: 'https://www.linkedin.com/in/mattgabor',
   },
-  googleAnalyticsID: '',
+  googleAnalyticsID: 'UA-88875900-4',
   themeColor: '#6b63ff',
   backgroundColor: '#6b63ff',
   social: {
